@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laboratorio de Exponenciales y Logaritmos</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="top-nav">
+      <a class="brand" href="index.html">Exp · Log Lab</a>
+      <div class="nav-links">
+        <a href="pages/exponenciales.html">Exponenciales</a>
+        <a href="pages/logaritmos.html">Logaritmos</a>
+        <a href="pages/transformaciones.html">Transformaciones</a>
+        <a href="pages/derivadas.html">Derivadas</a>
+        <a href="pages/quiz.html">Quiz</a>
+      </div>
+    </nav>
+
+    <section class="hero-content">
+      <p class="eyebrow">Cálculo diferencial · Álgebra de funciones</p>
+      <h1>Laboratorio de Exponenciales y Logaritmos</h1>
+      <p>
+        Proyecto web multipágina para graficar funciones exponenciales y logarítmicas,
+        analizar dominio, rango, asíntotas, transformaciones y resolver derivadas logarítmicas paso a paso.
+      </p>
+    </section>
+  </header>
+
+  <main class="container">
+    <section class="grid cards-grid">
+      <a class="module-card" href="pages/exponenciales.html">
+        <span>01</span>
+        <h2>Funciones exponenciales</h2>
+        <p>Grafica \(a^x\), \(e^x\), crecimiento, decrecimiento, dominio, rango y asíntota horizontal.</p>
+      </a>
+
+      <a class="module-card" href="pages/logaritmos.html">
+        <span>02</span>
+        <h2>Funciones logarítmicas</h2>
+        <p>Grafica \(\log_a(x)\), \(\ln(x)\), dominio, rango, crecimiento y asíntota vertical.</p>
+      </a>
+
+      <a class="module-card" href="pages/transformaciones.html">
+        <span>03</span>
+        <h2>Transformaciones</h2>
+        <p>Aplica traslaciones, reflexiones y dilataciones sobre exponenciales y logaritmos.</p>
+      </a>
+
+      <a class="module-card" href="pages/derivadas.html">
+        <span>04</span>
+        <h2>Derivadas logarítmicas</h2>
+        <p>Resuelve derivadas con \(\ln(u)\), \(\log_a(x)\), regla de la cadena y derivación logarítmica.</p>
+      </a>
+
+      <a class="module-card" href="pages/quiz.html">
+        <span>05</span>
+        <h2>Modo examen</h2>
+        <p>Practica conceptos de funciones, asíntotas, transformaciones y derivación logarítmica.</p>
+      </a>
+    </section>
+
+    <section class="panel">
+      <p class="section-label">Mapa del proyecto</p>
+      <h2>Contenido integrado</h2>
+      <div class="two-col">
+        <article>
+          <h3>Funciones exponenciales y logarítmicas</h3>
+          <ul>
+            <li>Definición de función exponencial.</li>
+            <li>Dominio y rango.</li>
+            <li>Asíntota horizontal y vertical.</li>
+            <li>Exponencial natural \(e^x\).</li>
+            <li>Logaritmo común y natural.</li>
+            <li>Transformaciones de funciones.</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Derivadas logarítmicas</h3>
+          <ul>
+            <li>Derivada de \( \ln(x) \).</li>
+            <li>Derivada de \( \log_a(x) \).</li>
+            <li>Regla de la cadena con \( \ln(u) \).</li>
+            <li>Derivación logarítmica.</li>
+            <li>Número \(e\) como límite.</li>
+            <li>Procedimiento paso a paso.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desarrollado con HTML, CSS, JavaScript, Canvas, MathJax y LocalStorage.</p>
+  </footer>
+
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [["\\(", "\\)"]], displayMath: [["\\[", "\\]"]] },
+      svg: { fontCache: "global" }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</body>
+</html>

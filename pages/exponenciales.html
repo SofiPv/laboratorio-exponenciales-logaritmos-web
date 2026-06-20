@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Funciones Exponenciales</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="top-nav">
+      <a class="brand" href="../index.html">Exp · Log Lab</a>
+      <div class="nav-links">
+        <a class="active" href="exponenciales.html">Exponenciales</a>
+        <a href="logaritmos.html">Logaritmos</a>
+        <a href="transformaciones.html">Transformaciones</a>
+        <a href="derivadas.html">Derivadas</a>
+        <a href="quiz.html">Quiz</a>
+      </div>
+    </nav>
+    <section class="hero-content">
+      <p class="eyebrow">Módulo 01</p>
+      <h1>Funciones exponenciales</h1>
+      <p>Grafica \(f(x)=A\cdot a^{b(x-h)}+k\), analiza crecimiento, dominio, rango, intersección y asíntota horizontal.</p>
+    </section>
+  </header>
+
+  <main class="page-layout">
+    <aside class="card controls">
+      <h2>Parámetros</h2>
+      <label>Base a <input id="baseInput" type="number" min="0.1" step="0.1" value="2"></label>
+      <label>Coeficiente A <input id="aInput" type="number" step="0.1" value="1"></label>
+      <label>Factor b <input id="bInput" type="number" step="0.1" value="1"></label>
+      <label>Desplazamiento h <input id="hInput" type="number" step="0.1" value="0"></label>
+      <label>Desplazamiento k <input id="kInput" type="number" step="0.1" value="0"></label>
+      <div class="button-grid">
+        <button id="drawBtn">Graficar</button>
+        <button id="presetNaturalBtn" class="secondary">Usar eˣ</button>
+        <button id="downloadBtn" class="secondary">Guardar PNG</button>
+      </div>
+
+      <section class="tool-card">
+        <h3>Fórmula</h3>
+        <div id="formulaBox" class="math-box"></div>
+      </section>
+    </aside>
+
+    <section class="card main-card">
+      <div class="canvas-card">
+        <canvas id="graphCanvas" width="980" height="620"></canvas>
+      </div>
+
+      <section class="stat-grid">
+        <div class="stat"><span>Dominio</span><strong>ℝ</strong></div>
+        <div class="stat"><span>Rango</span><strong id="rangeStat"></strong></div>
+        <div class="stat"><span>Asíntota horizontal</span><strong id="asymptoteStat"></strong></div>
+        <div class="stat"><span>Crecimiento</span><strong id="growthStat"></strong></div>
+        <div class="stat"><span>Intersección eje y</span><strong id="yInterceptStat"></strong></div>
+        <div class="stat"><span>Intersección eje x</span><strong id="xInterceptStat"></strong></div>
+      </section>
+
+      <section class="tool-card">
+        <h3>Tabla de valores</h3>
+        <div class="table-wrapper">
+          <table>
+            <thead><tr><th>x</th><th>f(x)</th></tr></thead>
+            <tbody id="valuesTable"></tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer><p>Funciones exponenciales · dominio, rango, crecimiento y asíntota horizontal.</p></footer>
+
+  <script src="../assets/js/shared.js"></script>
+  <script src="../assets/js/exponenciales.js"></script>
+  <script>
+    window.MathJax = { tex: { inlineMath: [["\\(", "\\)"]], displayMath: [["\\[", "\\]"]] }, svg: { fontCache: "global" } };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</body>
+</html>

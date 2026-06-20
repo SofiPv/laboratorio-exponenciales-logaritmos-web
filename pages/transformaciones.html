@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transformaciones</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="top-nav">
+      <a class="brand" href="../index.html">Exp · Log Lab</a>
+      <div class="nav-links">
+        <a href="exponenciales.html">Exponenciales</a>
+        <a href="logaritmos.html">Logaritmos</a>
+        <a class="active" href="transformaciones.html">Transformaciones</a>
+        <a href="derivadas.html">Derivadas</a>
+        <a href="quiz.html">Quiz</a>
+      </div>
+    </nav>
+    <section class="hero-content">
+      <p class="eyebrow">Módulo 03</p>
+      <h1>Transformaciones de funciones</h1>
+      <p>Compara funciones base contra sus traslaciones, reflexiones y dilataciones.</p>
+    </section>
+  </header>
+
+  <main class="page-layout">
+    <aside class="card controls">
+      <h2>Ejemplo</h2>
+      <label>
+        Transformación
+        <select id="transformSelect"></select>
+      </label>
+
+      <div class="button-grid">
+        <button id="drawBtn">Graficar</button>
+        <button id="downloadBtn" class="secondary">Guardar PNG</button>
+      </div>
+
+      <section class="tool-card">
+        <h3>Función transformada</h3>
+        <div id="formulaBox" class="math-box"></div>
+      </section>
+    </aside>
+
+    <section class="card main-card">
+      <div class="canvas-card">
+        <canvas id="graphCanvas" width="980" height="620"></canvas>
+      </div>
+
+      <section class="tool-card">
+        <h3>Transformaciones aplicadas</h3>
+        <ul id="stepsList"></ul>
+      </section>
+
+      <section class="stat-grid">
+        <div class="stat"><span>Dominio</span><strong id="domainStat"></strong></div>
+        <div class="stat"><span>Rango</span><strong id="rangeStat"></strong></div>
+        <div class="stat"><span>Asíntota</span><strong id="asymptoteStat"></strong></div>
+      </section>
+    </section>
+  </main>
+
+  <footer><p>Transformaciones · comparación de función base y función transformada.</p></footer>
+
+  <script src="../assets/js/shared.js"></script>
+  <script src="../assets/js/transformaciones.js"></script>
+  <script>
+    window.MathJax = { tex: { inlineMath: [["\\(", "\\)"]], displayMath: [["\\[", "\\]"]] }, svg: { fontCache: "global" } };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</body>
+</html>

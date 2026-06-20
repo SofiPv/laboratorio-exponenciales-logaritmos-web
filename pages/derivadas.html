@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Derivadas Logarítmicas</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="top-nav">
+      <a class="brand" href="../index.html">Exp · Log Lab</a>
+      <div class="nav-links">
+        <a href="exponenciales.html">Exponenciales</a>
+        <a href="logaritmos.html">Logaritmos</a>
+        <a href="transformaciones.html">Transformaciones</a>
+        <a class="active" href="derivadas.html">Derivadas</a>
+        <a href="quiz.html">Quiz</a>
+      </div>
+    </nav>
+    <section class="hero-content">
+      <p class="eyebrow">Módulo 04</p>
+      <h1>Derivadas de funciones logarítmicas</h1>
+      <p>Resuelve derivadas paso a paso con \( \ln(u) \), \( \log_a(x) \), regla de la cadena y derivación logarítmica.</p>
+    </section>
+  </header>
+
+  <main class="page-layout">
+    <aside class="card controls">
+      <h2>Solver</h2>
+      <label>
+        Ejercicio
+        <select id="exerciseSelect"></select>
+      </label>
+
+      <div class="button-grid">
+        <button id="solveBtn">Resolver</button>
+        <button id="copyBtn" class="secondary">Copiar pasos</button>
+      </div>
+
+      <section class="tool-card">
+        <h3>Fórmula base</h3>
+        <div id="ruleBox" class="math-box"></div>
+      </section>
+    </aside>
+
+    <section class="card main-card">
+      <section class="formula-grid">
+        <article>
+          <p class="section-label">Función</p>
+          <div id="originalBox" class="math-box"></div>
+        </article>
+        <article>
+          <p class="section-label">Derivada</p>
+          <div id="derivativeBox" class="math-box"></div>
+        </article>
+      </section>
+
+      <section class="inner-card">
+        <div class="section-header">
+          <div>
+            <p class="section-label">Procedimiento</p>
+            <h2>Solución paso a paso</h2>
+          </div>
+          <div class="button-row">
+            <button id="prevBtn" class="secondary compact">Anterior</button>
+            <button id="nextBtn" class="secondary compact">Siguiente</button>
+          </div>
+        </div>
+
+        <div class="solver-layout">
+          <aside id="stepIndex" class="step-index"></aside>
+          <article id="stepDetail" class="step-detail"></article>
+        </div>
+      </section>
+
+      <section class="inner-card">
+        <h2>Evaluación numérica</h2>
+        <label>
+          Valor de x
+          <input id="xValue" type="number" step="0.1" value="2">
+        </label>
+        <button id="evalBtn">Evaluar derivada</button>
+        <div id="evalResult" class="feedback"></div>
+      </section>
+    </section>
+  </main>
+
+  <footer><p>Derivadas logarítmicas · regla de la cadena y derivación logarítmica.</p></footer>
+
+  <script src="../assets/js/shared.js"></script>
+  <script src="../assets/js/derivadas.js"></script>
+  <script>
+    window.MathJax = { tex: { inlineMath: [["\\(", "\\)"]], displayMath: [["\\[", "\\]"]] }, svg: { fontCache: "global" } };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</body>
+</html>
